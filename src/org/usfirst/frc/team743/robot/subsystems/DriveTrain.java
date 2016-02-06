@@ -25,11 +25,6 @@ public class DriveTrain extends Subsystem {
         super("DriveTrain");
         motors = new RobotDrive( RobotMap.TalonBackLeft, RobotMap.TalonBackRight);
         
-
-//        motors.setInvertedMotor(RobotDrive.MotorType.kFrontLeft, false);
-//        motors.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
-//        motors.setInvertedMotor(RobotDrive.MotorType.kRearLeft, false);
-//        motors.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
     }
 
     public void initDefaultCommand() {
@@ -40,8 +35,5 @@ public class DriveTrain extends Subsystem {
    public void motortankdrive (Joystick stick) {
 	   motors.arcadeDrive(stick);
    }
-//    public void MecanumDrive(double magnitude, double direction, double rotation) {
-//
-//         motors.mecanumDrive_Polar(magnitude, direction, rotation);
-//    }
+
 }
