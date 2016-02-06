@@ -12,7 +12,7 @@ import org.usfirst.frc.team743.robot.commands.*;
  */
 public class OI {
 	
-	Joystick xbox;
+	public Joystick xbox;
 	Button buttonA, buttonB, buttonX, buttonY, buttonRB, buttonLB, buttonRT, buttonLT;
 	
 	public static final int SPEED = 35;
@@ -53,6 +53,7 @@ public class OI {
 
 	
 	public double getRotation() {
+		
 		return this.Buffer(xbox.getRawAxis(4) * ((float)SPEED / 100.0));
 	}
 	public double getDirection() {

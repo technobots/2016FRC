@@ -29,9 +29,8 @@ public class DriveWithXbox extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        Robot.drivetrain.MecanumDrive(	Robot.oi.getMagnitude(), 
-        								Robot.oi.getDirection(), 
-        								Robot.oi.getRotation());
+    	
+        Robot.drivetrain.motortankdrive(Robot.oi.xbox);
         //System.out.println("Current Distance: " + Robot.sonar.GetRangeInches());
     }
 

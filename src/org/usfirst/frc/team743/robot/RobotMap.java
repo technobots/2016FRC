@@ -9,14 +9,13 @@ package org.usfirst.frc.team743.robot;
 public class RobotMap {
 
     // Talons
-    public static final int TalonBackRight = 2,
-                            TalonBackLeft  = 3,
-                            TalonFrontRight = 0,
-                            TalonFrontLeft  = 1;
+    public static final int TalonBackRight = 0,
+                            TalonBackLeft  = 1;
+                         
     
     public static final int PneumaticsPortLeft = 0;
     public static final int PneumaticsPortRight = 1;
-    
+   
     /*public static final int CrawOpenorClosePort = 6,
     		                CrawUpDownPort = 8,
                             CrawSpinPort = 7;

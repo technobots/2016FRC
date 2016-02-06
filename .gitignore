@@ -1,2 +1,5 @@
 
 # Probably add bin/, build/, and dist/ to the ignore. But for now this is okay. 
+bin/
+build/
+dist/
