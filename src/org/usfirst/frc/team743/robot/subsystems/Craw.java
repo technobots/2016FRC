@@ -4,7 +4,7 @@ import org.usfirst.frc.team743.robot.RobotMap;
 
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.command.Subsystem;
-  
+
 /*public class Craw extends Subsystem {
 
 	Servo CrawOpenorClose;
