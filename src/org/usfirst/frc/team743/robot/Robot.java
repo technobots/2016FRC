@@ -21,9 +21,7 @@ public class Robot extends IterativeRobot {
 	public static OI oi;
     Command autonomousCommand;
     public static final DriveTrain drivetrain = new DriveTrain();
-    public static final Pneumatics pneumatics = new Pneumatics();
-  /*public static final Craw craw = new Craw();
-  public static final Sonar sonar = new Sonar();*/
+    public static final Moby moby = new Moby();
     
     
     

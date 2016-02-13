@@ -21,15 +21,10 @@ public class DriveTrain extends Subsystem {
     RobotDrive motors;
 
     public DriveTrain() {
-
         super("DriveTrain");
-        motors = new RobotDrive( RobotMap.TalonBackLeft, RobotMap.TalonBackRight);
+        System.out.println("Instantiating drivetrain");
+        motors = new RobotDrive( RobotMap.TalonBackRight, RobotMap.TalonBackLeft);
         
-
-//        motors.setInvertedMotor(RobotDrive.MotorType.kFrontLeft, false);
-//        motors.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
-//        motors.setInvertedMotor(RobotDrive.MotorType.kRearLeft, false);
-//        motors.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
     }
 
     public void initDefaultCommand() {
@@ -37,11 +32,8 @@ public class DriveTrain extends Subsystem {
         setDefaultCommand(new DriveWithXbox());
     }
     
-   public void motortankdrive (Joystick stick) {
+   public void MotorTankDrive (Joystick stick) {
+	   System.out.println("Drivetrain::MotorTankDrive");
 	   motors.arcadeDrive(stick);
    }
-//    public void MecanumDrive(double magnitude, double direction, double rotation) {
-//
-//         motors.mecanumDrive_Polar(magnitude, direction, rotation);
-//    }
 }

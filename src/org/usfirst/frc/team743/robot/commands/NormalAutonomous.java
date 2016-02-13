@@ -30,7 +30,6 @@ public class NormalAutonomous extends CommandGroup {
         
         addSequential(new DriveAutonomous(DRIVE_SPEED, DRIVE_FORWARD, -.01), secondsToDriveFor);
         addSequential(new WaitCommand(1.5));
-        addSequential(new PneumaticsUp()); // raise Pneumatics up
         addSequential(new WaitCommand(1.5));
         
         
@@ -38,7 +37,7 @@ public class NormalAutonomous extends CommandGroup {
         DRIVE_SPEED = .3;
         
         addSequential(new DriveAutonomous(DRIVE_SPEED, DRIVE_BACKWARDS, -.01), secondsToDriveFor);
-        addSequential(new PneumaticsDown());
+
         
     }
     
