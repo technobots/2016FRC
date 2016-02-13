@@ -12,10 +12,9 @@ public class RobotMap {
     public static final int TalonBackRight = 0,
                             TalonBackLeft  = 1,
                             
-                            TalonMoby = 2;
+                            TalonMoby = 3,
                          
-    
-    public static final int PneumaticsPortLeft = 0;
-    public static final int PneumaticsPortRight = 1;
+                            TalonDickBot = 4,
+                            TalonDickTop = 5;		
    
 }

@@ -44,7 +44,11 @@ public class OI {
 	
 		// To change controls, edit below
 		
-		buttonLT.whileHeld(new MobyPullIn());
+	
+		buttonLB.whileHeld(new MobyPullIn());
+		buttonX.whileHeld(new MobyPushOut());
+		buttonRB.whileHeld(new DickShoot());
+		
 	}
 	
 

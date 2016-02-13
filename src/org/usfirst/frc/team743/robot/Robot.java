@@ -22,6 +22,7 @@ public class Robot extends IterativeRobot {
     Command autonomousCommand;
     public static final DriveTrain drivetrain = new DriveTrain();
     public static final Moby moby = new Moby();
+    public static final Dick dick = new Dick();
     
     
     

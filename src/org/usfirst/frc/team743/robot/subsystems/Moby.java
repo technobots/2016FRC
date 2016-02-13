@@ -1,6 +1,7 @@
 package org.usfirst.frc.team743.robot.subsystems;
 
 import org.usfirst.frc.team743.robot.RobotMap;
+import org.usfirst.frc.team743.robot.commands.MobyDoNothing;
 
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -28,10 +29,14 @@ public class Moby extends Subsystem {
 		motor.set(-1.0);
 	}
 	
+	public void setSpeed (double speed) {
+		motor.set(speed);
+	}
+	
 	@Override
 	protected void initDefaultCommand() {
 		// TODO Auto-generated method stub
-
+		setDefaultCommand(new MobyDoNothing());
 	}
 
 }
