@@ -1,9 +1,16 @@
 package org.usfirst.frc.team743.robot;
 
-import edu.wpi.first.wpilibj.Joystick;  
+import org.usfirst.frc.team743.robot.commands.DickShoot;
+import org.usfirst.frc.team743.robot.commands.MobyPullIn;
+import org.usfirst.frc.team743.robot.commands.MobyPushOut;
+import org.usfirst.frc.team743.robot.commands.Thing1Down;
+import org.usfirst.frc.team743.robot.commands.Thing1Up;
+import org.usfirst.frc.team743.robot.commands.Thing2Down;
+import org.usfirst.frc.team743.robot.commands.Thing2Up;
+
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import org.usfirst.frc.team743.robot.commands.*;
 //import org.usfirst.frc.team743.robot.commands.CrawToggle;
 
 /**
@@ -13,7 +20,7 @@ import org.usfirst.frc.team743.robot.commands.*;
 public class OI {
 	
 	public Joystick xbox;
-	Button buttonA, buttonB, buttonX, buttonY, buttonRB, buttonLB, buttonRT, buttonLT;
+	Button buttonA, buttonB, buttonX, buttonY, buttonRB, buttonLB, buttonRT, buttonLT, buttonStart;
 	
 	public static final int SPEED = 35;
 	
@@ -41,17 +48,20 @@ public class OI {
 		buttonRB = new JoystickButton(xbox, RB);
 		buttonLT = new JoystickButton(xbox, LTRIGGER);
 		buttonRT = new JoystickButton(xbox, RTRIGGER);
-	
+		buttonStart = new JoystickButton(xbox, START);
+		
 		// To change controls, edit below
 		
-<<<<<<< HEAD
+
 	  //buttonX.whenPressed(new CrawToggle());
-=======
-	
+
 		buttonLB.whileHeld(new MobyPullIn());
-		buttonX.whileHeld(new MobyPushOut());
 		buttonRB.whileHeld(new DickShoot());
->>>>>>> 3be19b3e941cc9a4562f0e04d38f2b658a5b42cc
+		buttonStart.whileHeld(new MobyPushOut());
+        buttonA.whileHeld(new Thing1Up());
+        buttonB.whileHeld(new Thing1Down());
+        buttonX.whileHeld(new Thing2Up());
+        buttonY.whileHeld(new Thing2Down());
 		
 	}
 	

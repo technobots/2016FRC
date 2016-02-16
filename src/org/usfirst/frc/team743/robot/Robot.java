@@ -1,8 +1,11 @@
 
 package org.usfirst.frc.team743.robot;
 
-import org.usfirst.frc.team743.robot.commands.*;
-import org.usfirst.frc.team743.robot.subsystems.*;
+import org.usfirst.frc.team743.robot.subsystems.Dick;
+import org.usfirst.frc.team743.robot.subsystems.DriveTrain;
+import org.usfirst.frc.team743.robot.subsystems.Moby;
+import org.usfirst.frc.team743.robot.subsystems.Thing1;
+import org.usfirst.frc.team743.robot.subsystems.Thing2;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
@@ -21,14 +24,17 @@ public class Robot extends IterativeRobot {
 	public static OI oi;
     Command autonomousCommand;
     public static final DriveTrain drivetrain = new DriveTrain();
-<<<<<<< HEAD
+
    
   /*public static final Craw craw = new Craw();
   public static final Sonar sonar = new Sonar();*/
-=======
+
     public static final Moby moby = new Moby();
     public static final Dick dick = new Dick();
->>>>>>> 3be19b3e941cc9a4562f0e04d38f2b658a5b42cc
+    
+    public static final Thing1 Thing1 = new Thing1();
+    public static final Thing2 Thing2 = new Thing2();
+    
     
     
     

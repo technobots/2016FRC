@@ -14,10 +14,11 @@ public class RobotMap {
                             
                             TalonMoby = 3;
 
-    public static final int SonarPingChannel = 4,
-    						SonarEchoChannel = 5,
+    public static final int /* SonarPingChannel = 4,
+    						SonarEchoChannel = 5, */
                             TalonDickBot = 4,
-                            TalonDickTop = 5;		
-   
-
+                            TalonDickTop = 5,		
+                            TalonBotActuators = 6,
+                            TalonTopActuators = 7,
+                            TalonCraw = 2;
 }

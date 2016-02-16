@@ -1,10 +1,16 @@
 package org.usfirst.frc.team743.robot.commands;
 
+import org.usfirst.frc.team743.robot.Robot;
+
 import edu.wpi.first.wpilibj.command.Command;
 
-public class Thing1Up extends Command {
+public class Thing2Up extends Command {
 
-	@Override
+	public Thing2Up() {
+		super("Thing2Up");
+		requires(Robot.Thing2);
+		// 
+	}
 	protected void initialize() {
 		// TODO Auto-generated method stub
 
@@ -13,7 +19,7 @@ public class Thing1Up extends Command {
 	@Override
 	protected void execute() {
 		// TODO Auto-generated method stub
-
+		Robot.Thing2.actuatorTopUp();
 	}
 
 	@Override

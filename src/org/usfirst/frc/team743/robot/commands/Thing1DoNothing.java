@@ -1,9 +1,17 @@
 package org.usfirst.frc.team743.robot.commands;
 
+import org.usfirst.frc.team743.robot.Robot;
+
 import edu.wpi.first.wpilibj.command.Command;
 
 public class Thing1DoNothing extends Command {
 
+	public Thing1DoNothing() {
+		super("Thing1DoNothing");
+		requires(Robot.Thing1);
+		// 
+	}
+	
 	@Override
 	protected void initialize() {
 		// TODO Auto-generated method stub
@@ -12,7 +20,7 @@ public class Thing1DoNothing extends Command {
 
 	@Override
 	protected void execute() {
-		// TODO Auto-generated method stub
+		Robot.Thing1.actuatorBotDoNothing();
 
 	}
 
