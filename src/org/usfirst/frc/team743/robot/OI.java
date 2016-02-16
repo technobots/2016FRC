@@ -28,6 +28,7 @@ public class OI {
 			START = 8,
 			LTRIGGER = 9,
 			RTRIGGER = 10;
+		
 		int JOYSTICK_PORT = 0;
 		
 		xbox = new Joystick(JOYSTICK_PORT);
@@ -43,22 +44,29 @@ public class OI {
 	
 		// To change controls, edit below
 		
+<<<<<<< HEAD
 	  //buttonX.whenPressed(new CrawToggle());
+=======
+	
+		buttonLB.whileHeld(new MobyPullIn());
+		buttonX.whileHeld(new MobyPushOut());
+		buttonRB.whileHeld(new DickShoot());
+>>>>>>> 3be19b3e941cc9a4562f0e04d38f2b658a5b42cc
 		
 	}
 	
 
-	
-	public double getRotation() {
-		
-		return this.Buffer(xbox.getRawAxis(4) * ((float)SPEED / 100.0));
-	}
-	public double getDirection() {
-		return this.Buffer(this.xbox.getDirectionDegrees());
-	}
-	public double getMagnitude() {
-		return this.Buffer(this.xbox.getMagnitude() * ((float)SPEED / 100.0));
-	}
+//	
+//	public double getRotation() {
+//		
+//		return this.Buffer(xbox.getRawAxis(4) * ((float)SPEED / 50.0));
+//	}
+//	public double getDirection() {
+//		return this.Buffer(this.xbox.getDirectionDegrees());
+//	}
+//	public double getMagnitude() {
+//		return this.Buffer(this.xbox.getMagnitude() * ((float)SPEED / 100.0));
+//	}
 	
 	/**
 	 * @param val

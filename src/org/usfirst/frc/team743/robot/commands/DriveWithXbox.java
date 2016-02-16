@@ -29,8 +29,8 @@ public class DriveWithXbox extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	
-        Robot.drivetrain.motortankdrive(Robot.oi.xbox);
+    	System.out.println("Attempting to drive");
+        Robot.drivetrain.MotorTankDrive(Robot.oi.xbox);
         //System.out.println("Current Distance: " + Robot.sonar.GetRangeInches());
     }
 

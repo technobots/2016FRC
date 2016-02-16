@@ -14,16 +14,16 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
  *
- * @author miguel
+ * @author ACER
  */
 public class DriveTrain extends Subsystem {
 
     RobotDrive motors;
 
     public DriveTrain() {
-
         super("DriveTrain");
-        motors = new RobotDrive( RobotMap.TalonBackLeft, RobotMap.TalonBackRight);
+        System.out.println("Instantiating drivetrain");
+        motors = new RobotDrive( RobotMap.TalonBackRight, RobotMap.TalonBackLeft);
         
     }
 
@@ -32,7 +32,8 @@ public class DriveTrain extends Subsystem {
         setDefaultCommand(new DriveWithXbox());
     }
     
-   public void motortankdrive (Joystick stick) {
+   public void MotorTankDrive (Joystick stick) {
+	   System.out.println("Drivetrain::MotorTankDrive");
 	   motors.arcadeDrive(stick);
    }
 
