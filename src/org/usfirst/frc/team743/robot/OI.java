@@ -46,8 +46,8 @@ public class OI {
 		
 	
 		buttonLB.whileHeld(new MobyPullIn());
-		buttonX.whileHeld(new MobyPushOut());
-		buttonRB.whileHeld(new DickShoot());
+		buttonRB.whileHeld(new MobyPushOut());
+		buttonX.whileHeld(new DickShoot());
 		
 	}
 	
