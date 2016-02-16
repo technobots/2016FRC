@@ -13,13 +13,6 @@ public class RobotMap {
                             TalonBackLeft  = 1;
                          
     
-    public static final int PneumaticsPortLeft = 0;
-    public static final int PneumaticsPortRight = 1;
-   
-    /*public static final int CrawOpenorClosePort = 6,
-    		                CrawUpDownPort = 8,
-                            CrawSpinPort = 7;
-    
     public static final int SonarPingChannel = 4,
     						SonarEchoChannel = 5;*/ 
 }

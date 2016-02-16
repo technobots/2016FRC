@@ -43,9 +43,6 @@ public class OI {
 	
 		// To change controls, edit below
 		
-		buttonLB.whenPressed(new PneumaticsDown());
-		buttonRB.whenPressed(new PneumaticsUp());
-		
 	  //buttonX.whenPressed(new CrawToggle());
 		
 	}
