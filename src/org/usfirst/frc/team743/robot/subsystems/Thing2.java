@@ -37,3 +37,5 @@ public class Thing2 extends Subsystem {
 		setDefaultCommand( new Thing2DoNothing());
 
 	}
+	
+}
