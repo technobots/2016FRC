@@ -11,7 +11,7 @@ public class RobotMap {
     // Talons
     public static final int TalonBackRight = 0,
                             TalonBackLeft  = 1,
-                            
+                            TalonCraw = 2,
                             TalonMoby = 3;
 
     public static final int /* SonarPingChannel = 4,
@@ -19,6 +19,6 @@ public class RobotMap {
                             TalonDickBot = 4,
                             TalonDickTop = 5,		
                             TalonBotActuators = 6,
-                            TalonTopActuators = 7,
-                            TalonCraw = 2;
+                            TalonTopActuators = 7;
+                            
 }

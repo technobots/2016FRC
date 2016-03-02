@@ -1,12 +1,12 @@
 package org.usfirst.frc.team743.robot;
 
+import org.usfirst.frc.team743.robot.commands.CrawDown;
+import org.usfirst.frc.team743.robot.commands.CrawUp;
 import org.usfirst.frc.team743.robot.commands.DickShoot;
 import org.usfirst.frc.team743.robot.commands.MobyPullIn;
 import org.usfirst.frc.team743.robot.commands.MobyPushOut;
-import org.usfirst.frc.team743.robot.commands.Thing1Down;
-import org.usfirst.frc.team743.robot.commands.Thing1Up;
-import org.usfirst.frc.team743.robot.commands.Thing2Down;
-import org.usfirst.frc.team743.robot.commands.Thing2Up;
+import org.usfirst.frc.team743.robot.commands.ThingDown;
+import org.usfirst.frc.team743.robot.commands.ThingUp;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
@@ -55,14 +55,14 @@ public class OI {
 
 	  //buttonX.whenPressed(new CrawToggle());
 
-		buttonLB.whileHeld(new MobyPullIn());
-		buttonRB.whileHeld(new DickShoot());
-		buttonStart.whileHeld(new MobyPushOut());
-        buttonA.whileHeld(new Thing1Up());
-        buttonB.whileHeld(new Thing1Down());
-        buttonX.whileHeld(new Thing2Up());
-        buttonY.whileHeld(new Thing2Down());
-		
+		buttonStart.whileHeld(new MobyPullIn());
+		buttonLB.whileHeld(new DickShoot());
+		buttonRB.whileHeld(new MobyPushOut());
+        buttonA.whileHeld(new ThingUp());
+        buttonB.whileHeld(new ThingDown());
+        buttonX.whileHeld(new CrawUp());
+        buttonY.whileHeld(new CrawDown());
+
 	}
 	
 

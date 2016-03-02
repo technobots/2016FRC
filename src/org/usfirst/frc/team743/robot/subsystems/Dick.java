@@ -20,7 +20,7 @@ public class Dick extends Subsystem {
 
 	public void Dickshoot () {
 		motorbot.set(-1.0);
-		motortop.set(1.0);
+		motortop.set(0.5);
 	}
 	
 	public void dickStop () {

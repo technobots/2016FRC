@@ -4,11 +4,11 @@ import org.usfirst.frc.team743.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-public class Thing1DoNothing extends Command {
+public class ThingDoNothing extends Command {
 
-	public Thing1DoNothing() {
-		super("Thing1DoNothing");
-		requires(Robot.Thing1);
+	public ThingDoNothing() {
+		super("ThingDoNothing");
+		requires(Robot.thing);
 		// 
 	}
 	
@@ -20,7 +20,7 @@ public class Thing1DoNothing extends Command {
 
 	@Override
 	protected void execute() {
-		Robot.Thing1.actuatorBotDoNothing();
+		Robot.thing.actuatorsDoNothing();
 
 	}
 

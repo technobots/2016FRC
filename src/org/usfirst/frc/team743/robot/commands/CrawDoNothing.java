@@ -4,12 +4,14 @@ import org.usfirst.frc.team743.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-public class Thing1Up extends Command {
+public class CrawDoNothing extends Command {
 
-	public Thing1Up() {
-		super("Thing1Up");
-		requires(Robot.Thing1);
+	public CrawDoNothing() {
+		super("CrawDoNothing");
+		requires(Robot.craw);
+		// 
 	}
+	
 	@Override
 	protected void initialize() {
 		// TODO Auto-generated method stub
@@ -18,11 +20,10 @@ public class Thing1Up extends Command {
 
 	@Override
 	protected void execute() {
-		Robot.Thing1.actuatorBotUp();
-		
-		// TODO Auto-generated method stub
+		Robot.craw.crawDoNothing();
 
 	}
+
 	@Override
 	protected boolean isFinished() {
 		// TODO Auto-generated method stub

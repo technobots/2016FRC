@@ -34,7 +34,14 @@ public class DriveTrain extends Subsystem {
     
    public void MotorTankDrive (Joystick stick) {
 	   System.out.println("Drivetrain::MotorTankDrive");
-	   motors.arcadeDrive(stick);
+	   // sorta works
+	   //motors.arcadeDrive(stick);
+	   
+	   // doesn't really work
+	   motors.tankDrive(stick.getRawAxis(1), stick.getRawAxis(5));
+	   System.out.println("rawAxis(2) " + stick.getRawAxis(1) + " rawAxis(5) " + stick.getRawAxis(5));
+	   //motors.arcadeDrive(stick.getRawAxis(1), stick.getRawAxis(0)*-1);
+			   
    }
 
 }
