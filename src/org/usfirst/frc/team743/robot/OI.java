@@ -20,14 +20,17 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton;
 public class OI {
 	
 	public Joystick xbox;
+ 	Joystick getPOVCount1;
+ 	int getPOVCount;
 	Button buttonA, buttonB, buttonX, buttonY, buttonRB, buttonLB, buttonRT, buttonLT, buttonStart;
 	
 	public static final int SPEED = 35;
 	
+	
 	public OI() {
-		int A = 1,
-			B = 2,
-			X = 3,
+		int A = 2,
+			B = 3,
+			X = 1,
 			Y = 4,
 			LB = 5,
 			RB = 6,
@@ -50,6 +53,8 @@ public class OI {
 		buttonRT = new JoystickButton(xbox, RTRIGGER);
 		buttonStart = new JoystickButton(xbox, START);
 		
+		
+		getPOVCount = getPOVCount1.getPOVCount();
 		// To change controls, edit below
 		
 
@@ -62,6 +67,10 @@ public class OI {
         buttonB.whileHeld(new ThingDown());
         buttonX.whileHeld(new CrawUp());
         buttonY.whileHeld(new CrawDown());
+        
+        
+        
+        System.out.println(getPOVCount);
 
 	}
 	
